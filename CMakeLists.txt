@@ -9,11 +9,11 @@ enable_language(CXX)
 find_package(xbmc REQUIRED)
 find_package(xbmcplatform REQUIRED)
 find_package(SampleRate REQUIRED)
-find_package(FFTW3 REQUIRED)
+#find_package(FFTW3 REQUIRED)
 
 include_directories(${xbmcplatform_INCLUDE_DIRS}
                     ${XBMC_INCLUDE_DIR}
-                    ${FFTW3_INCLUDE_DIRS}
+                    #${FFTW3_INCLUDE_DIRS}
                     ${SAMPLERATE_INCLUDE_DIRS})
 
 set(BASIC_SOURCES src/AudioDSPBasic.cpp
@@ -31,7 +31,7 @@ set(BASIC_SOURCES src/AudioDSPBasic.cpp
                   src/AudioDSPSoundTest.cpp)
 
 set(DEPLIBS ${xbmcplatform_LIBRARIES}
-            ${FFTW3_LIBRARIES}
+            #${FFTW3_LIBRARIES}
             ${SAMPLERATE_LIBRARIES})
 
 build_addon(adsp.basic BASIC DEPLIBS)
