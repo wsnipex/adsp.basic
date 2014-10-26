@@ -46,7 +46,11 @@ std::string GetSettingsFile()
       settingFile.at(settingFile.size() - 1) == '/')
     settingFile.append("ADSPBasicAddonSettings.xml");
   else
+#if defined(TARGET_WINDOWS)
+    settingFile.append("\\ADSPBasicAddonSettings.xml");
+#else
     settingFile.append("/ADSPBasicAddonSettings.xml");
+#endif
   return settingFile;
 }
 
