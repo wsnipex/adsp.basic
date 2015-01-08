@@ -23,8 +23,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "xbmc/libXBMC_addon.h"
-#include "xbmc/libXBMC_adsp.h"
+#include "kodi/libXBMC_addon.h"
+#include "kodi/libXBMC_adsp.h"
 
 #include "DSPProcessStereo.h"
 #include "../client.h"

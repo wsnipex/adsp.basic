@@ -24,10 +24,10 @@
 #include <map>
 #include <samplerate.h>
 
-#include "xbmc/xbmc_adsp_types.h"
+#include "kodi/xbmc_adsp_types.h"
 
-#include "xbmc/threads/threads.h"
-#include "xbmc/threads/mutex.h"
+#include "kodi/threads/threads.h"
+#include "kodi/threads/mutex.h"
 #include "filter/delay.h"
 
 #include "DSPProcessMaster.h"

@@ -19,8 +19,8 @@
  *
  */
 
-#include "xbmc/threads/threads.h"
-#include "xbmc/threads/mutex.h"
+#include "kodi/threads/threads.h"
+#include "kodi/threads/mutex.h"
 
 #define SOUND_TEST_OFF              0
 #define SOUND_TEST_PINK_NOICE       1

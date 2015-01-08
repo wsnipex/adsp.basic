@@ -22,9 +22,9 @@
 #include <vector>
 #include <string>
 #include "client.h"
-#include "xbmc/xbmc_adsp_dll.h"
-#include "xbmc/util/util.h"
-#include "xbmc/util/StdString.h"
+#include "kodi/xbmc_adsp_dll.h"
+#include "kodi/util/util.h"
+#include "kodi/util/StdString.h"
 #include "AudioDSPBasic.h"
 
 using namespace std;
