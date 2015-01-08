@@ -6,13 +6,13 @@ list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR})
 
 enable_language(CXX)
 
-find_package(xbmc REQUIRED)
-find_package(xbmcplatform REQUIRED)
+find_package(kodi REQUIRED)
+find_package(kodiplatform REQUIRED)
 find_package(SampleRate REQUIRED)
 #find_package(FFTW3 REQUIRED)
 
-include_directories(${xbmcplatform_INCLUDE_DIRS}
-                    ${XBMC_INCLUDE_DIR}
+include_directories(${kodiplatform_INCLUDE_DIRS}
+                    ${KODI_INCLUDE_DIR}
                     #${FFTW3_INCLUDE_DIRS}
                     ${SAMPLERATE_INCLUDE_DIRS})
 
@@ -30,7 +30,7 @@ set(BASIC_SOURCES src/AudioDSPBasic.cpp
                   src/filter/mkfilter.cpp
                   src/AudioDSPSoundTest.cpp)
 
-set(DEPLIBS ${xbmcplatform_LIBRARIES}
+set(DEPLIBS ${kodiplatform_LIBRARIES}
             #${FFTW3_LIBRARIES}
             ${SAMPLERATE_LIBRARIES})
 
